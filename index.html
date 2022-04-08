@@ -2,26 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Manging Landing Page</title>
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
 <!--Navbar-->
-<nav class="container flex justify-between mx-auto p-6">
-    <!--    Logo -->
-    <div class="pt-2">
-        <img src="img/logo.svg" alt="Logo">
+<nav class="container pt-6">
+    <div class="px-20 flex justify-between items-center">
+        <div>
+            <img src="img/logo.svg" alt="">
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+            <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+        <div class="hidden md:block">
+            <button class="px-6 py-2 bg-brightRed hover:bg-brightRedLight text-white rounded-full">Get Started</button>
+        </div>
     </div>
-    <!--    Nav Items-->
-    <div class="hidden md:flex items-center space-x-6">
-        <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-        <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Community</a>
-    </div>
-<!--    Button-->
-    <button class="hidden md:block px-6 py-3 bg-brightRed text-white rounded-full">Get Started</button>
 </nav>
+<!-- Hero -->
+<section id="hero">
+<div class="container flex flex-col-reverse md:flex-row mt-12 justify-center">
+    <!--        Left Content-->
+    <div class="md:w-1/2 flex-col md:flex-row space-y-12 px-5">
+        <h1 class="font-bold text-4xl text-center md:text-left md:text-5xl md:max-w-lg">Bring everyone together to build better
+            products</h1>
+        <p class="text-darkGrayishBlue text-center md:text-left">
+            Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals
+            in view.
+        </p>
+        <div class="md:block text-center md:text-left">
+            <button class="px-6 py-2 bg-brightRed hover:bg-brightRedLight text-white rounded-full">Get Started
+            </button>
+        </div>
+    </div>
+    <!--         Right Content-->
+    <div class="mb-12 md:mb-0 md:1/2 max-w-lg">
+        <img src="img/illustration-intro.svg" alt="">
+    </div>
+</div>
+</section>
 </body>
 </html>
