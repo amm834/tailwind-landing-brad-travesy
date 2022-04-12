@@ -1,5 +1,4 @@
 module.exports = {
-    mode: 'jit',
     content: [
         './index.html',
         './*.html'
@@ -17,16 +16,12 @@ module.exports = {
                 veryLightGray: 'hsl(0, 0%, 98%)',
             },
         },
-        screen: {
+        screens: {
             sm: '480px',
             md: '768px',
             lg: '976px',
-            xl: '1440px'
+            xl: '1440px',
         },
-        container: {
-            center: true,
-            padding: '2rem',
-        }
     },
     plugins: [],
 }
