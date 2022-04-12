@@ -10,32 +10,53 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="container mx-auto p-6">
-    <div class="flex justify-between items-center">
-        <!--         Image -->
+<nav class="relative container mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+        <!-- Logo -->
         <div class="pt-2">
-            <img src="img/logo.svg" alt="">
+            <img src="img/logo.svg" alt=""/>
         </div>
-        <!--         Navbar Items-->
-        <!-- This is a responsive navbar. The `hidden` class hides the navbar on mobile devices. The `md:flex` class makes
-        the navbar visible on medium devices. The `space-x-6` class adds space between the navbar items. -->
-        <div class="hidden md:flex space-x-6">
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex">
             <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
             <a href="#" class="hover:text-darkGrayishBlue">Product</a>
             <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
             <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
             <a href="#" class="hover:text-darkGrayishBlue">Community</a>
         </div>
-        <!--        Get Started Button-->
-        <div class="hidden md:block">
-            <button class="px-6 py-2 bg-brightRed text-white rounded-full hover:bg-brightRedLight hover:text-white">Get
-                Started
-            </button>
+        <!-- Button -->
+        <a
+                href="#"
+                class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+        >Get Started</a
+        >
+
+        <!-- Hamburger Icon -->
+        <button
+                id="menu-btn"
+                class="block hamburger md:hidden focus:outline-none"
+        >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+        <div
+                id="menu"
+                class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+            <a href="#">Pricing</a>
+            <a href="#">Product</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
         </div>
     </div>
-</nav>
-
-<!-- Hero -->
+</nav><!-- Hero -->
 <section id="hero" class="container mx-auto mt-12">
     <div class="flex flex-col-reverse md:flex-row md:space-x-16 items-center">
         <!--        Left Content -->
@@ -43,7 +64,8 @@
             <h1 class="font-bold text-4xl md:text-5xl max-w-md text-center md:text-left">Bring everyone together to
                 build better products</h1>
             <p class="font-base text-darkGrayishBlue text-center md:text-left max-w-sm">
-                Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals
+                Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team
+                goals
                 in view.
             </p>
             <div class="text-center md:text-left">
@@ -175,7 +197,8 @@
             <img class="w-20 h-20 -mt-20" src="img/avatar-anisha.png" alt="anisha">
             <h3 class="font-bold text-lg">Anisha Li</h3>
             <p class="text-darkGrayishBlue text-sm">
-                “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at
+                “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger
+                milestones at
                 all times keeps everyone motivated.”
             </p>
         </div>
@@ -191,7 +214,8 @@
             <img class="w-20 h-20 -mt-20" src="img/avatar-anisha.png" alt="anisha">
             <h3 class="font-bold text-lg">Richard Watts</h3>
             <p class="text-darkGrayishBlue text-sm">
-                “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at
+                “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger
+                milestones at
                 all times keeps everyone motivated.”
             </p>
         </div>
@@ -208,8 +232,9 @@
 </section>
 
 <!-- This is a section that is used to display a call to action. -->
-<section  class="bg-brightRed mt-10">
-    <div id="cta" class="container  mx-auto py-10 space-y-16 px-6 justify-between items-center flex flex-col md:flex-row ">
+<section class="bg-brightRed mt-10">
+    <div id="cta"
+         class="container  mx-auto py-10 space-y-16 px-6 justify-between items-center flex flex-col md:flex-row ">
         <h1 class="font-bold text-5xl md:text-4xl text-white">Simplify how your team works today</h1>
         <button class="px-6 py-2 bg-white text-brightRed rounded-full hover:bg-slate-800">Get
             Started
@@ -295,6 +320,8 @@
         </div>
     </div>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
 
